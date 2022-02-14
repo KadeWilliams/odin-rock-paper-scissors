@@ -28,12 +28,11 @@ function playRound(computerSelection, playerSelection) {
 
 }
 
-
 function game() {
     let computerScore = 0;
     let playerScore = 0;
 
-    for (i = 0; i <= 5; i++) {
+    for (i = 0; i < 5; i++) {
         let computer = computerPlay();
         let player = playerPlay();
 
@@ -49,11 +48,12 @@ function game() {
         }
     }
 
-    let winner = playerScore > computerScore ? console.log('You win!') : console.log("You lose!")
+    return playerScore > computerScore ? `You win ${playerScore} to ${computerScore}`
+        : playerScore < computerScore ? `Computer wins ${computerScore} to ${playerScore}`
+            : `You tied ${computerScore} to ${playerScore}`;
+
 
     // console.log(`Computer: ${computer}\nPlayer: ${player}`);
-
-
 }
 
-console.log(game());
+alert(game())
