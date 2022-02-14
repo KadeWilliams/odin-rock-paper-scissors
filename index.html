@@ -1,61 +1,16 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
 
-    const randomNumber = max => Math.floor(Math.random() * max)
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-    console.log(Math.floor(Math.random() * 3))
+<body>
+    <h1>Console based ROCK, PAPER, SCISSORS game</h1>
+    <script src="scripts.js"></script>
+</body>
 
-    const computerPlay = () => {
-        const rockPaperScissors = ['rock', 'paper', 'scissors'];
-        let compChoice = rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)];
-        return compChoice;
-    }
-
-
-    // const playRound = (playerSelection, computerSelection) => {
-    //     playerSelection = playerSelection.toLowerCase()
-    //     if (playerSelection === computerSelection) {
-    //         return `Draw! You both picked ${playerSelection}`
-    //     } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-    //         return `You Lose! ${computerSelection} beats ${playerSelection}`
-    //     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-    //         return `You Lose! ${computerSelection} beats ${playerSelection}`
-    //     } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-    //         return `You Lose! ${computerSelection} beats ${playerSelection}`
-    //     } else {
-    //         return `You Win! ${playerSelection} beats ${computerSelection}`
-    //     }
-    // }
-
-    const playRound = (playerSelection, computerSelection) => {
-        playerSelection = playerSelection.toLowerCase()
-        if (playerSelection === computerSelection) {
-            return `Draw! You both picked ${playerSelection}`
-        } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-            return `You Lose! ${computerSelection} beats ${playerSelection}`
-        } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-            return `You Lose! ${computerSelection} beats ${playerSelection}`
-        } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-            return `You Lose! ${computerSelection} beats ${playerSelection}`
-        } else {
-            return `You Win! ${playerSelection} beats ${computerSelection}`
-        }
-    }
-
-    const game = (playRound) => {
-        for (let i = 0; i < 5; i++) {
-            const playerSelection = prompt('Rock, Paper, or Scissors?');
-            const computerSelection = computerPlay();
-            alert(playRound(playerSelection, computerSelection));
-        }
-
-    }
-
-
-    // Get input from the user (rock, paper, or scissors)
-    // Play until computer or user wins 5 rounds
-    // Get the winner and update their score, if no winner don't update score 
-
-    // Create a playRound function
-    // Create game (main) function
-    // 
-</script>
+</html>
