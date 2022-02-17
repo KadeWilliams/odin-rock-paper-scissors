@@ -6,11 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+
 </head>
 
 <body>
-    <h1>Console based ROCK, PAPER, SCISSORS game</h1>
-    <script src="scripts.js"></script>
+    <h1>Rock, Paper, Scissors</h1>
+    <div>
+        <button id="rock" class="button">ROCK</button>
+        <button id="paper" class="button">PAPER</button>
+        <button id="scissors" class="button">SCISSORS</button>
+    </div>
+
+    <div class="player-names">
+        <div class="player-name">
+            Player Score
+        </div>
+        <div class="computer-name">
+            Computer Score
+        </div>
+    </div>
+    <div class="scoreboard">
+        <div id="player-score">
+            0
+        </div>
+        <div id="computer-score">
+            0
+        </div>
+    </div>
+    <div id="results">
+
+    </div>
+    <div>
+        <button id="reset">Play Again!</button>
+    </div>
 </body>
 
 </html>

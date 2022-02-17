@@ -1,0 +1,12 @@
+* {
+    padding: 10px;
+}
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
